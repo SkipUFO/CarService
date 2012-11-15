@@ -1,6 +1,6 @@
 #include <QtCore/QString>
 #include <QtTest/QtTest>
-#include "../CarService/client.h"
+#include "../../../src/client.h"
 
 class ClientTest : public QObject
 {
@@ -166,5 +166,5 @@ void ClientTest::testCaseAddCars()
 
 QTEST_APPLESS_MAIN(ClientTest)
 
-#include "tst_clienttest.moc"
+#include "tst_client.moc"
 

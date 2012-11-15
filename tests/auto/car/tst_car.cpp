@@ -1,6 +1,6 @@
 #include <QtCore/QString>
 #include <QtTest/QtTest>
-#include "../CarService/car.h"
+#include "../../../src/car.h"
 
 class CarTest : public QObject
 {
@@ -111,4 +111,4 @@ void CarTest::testCaseCreateByOperatorAssignment()
 
 QTEST_APPLESS_MAIN(CarTest)
 
-#include "tst_cartest.moc"
+#include "tst_car.moc"

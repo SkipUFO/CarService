@@ -4,19 +4,23 @@
 #
 #-------------------------------------------------
 
-QT       += network sql xml xmlpatterns testlib
+QT       += testlib
 
-TARGET = tst_car
+TARGET = tst_client
 CONFIG   += console
 CONFIG   -= app_bundle
 
 TEMPLATE = app
 
 
-SOURCES += tst_cartest.cpp \
-           ../CarService/car.cpp
+SOURCES += \
+           ../../../src/client.cpp \
+           ../../../src/car.cpp \
+           tst_client.cpp
+
 
 #DEFINES += SRCDIR=\\\"../CarService\\\"
 
 HEADERS += \
-    ../CarService/car.h
+    ../../../src/client.h \
+    ../../../src/car.h

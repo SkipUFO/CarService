@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += network sql xml xmlpatterns testlib
+QT       += xml testlib
 
 TARGET = tst_clients
 CONFIG   += console
@@ -15,14 +15,14 @@ TEMPLATE = app
 
 SOURCES += \
            tst_clients.cpp \
-           ../CarService/clients.cpp \
-           ../CarService/client.cpp \
-           ../CarService/car.cpp
+           ../../../src/clients.cpp \
+           ../../../src/client.cpp \
+           ../../../src/car.cpp
 
 
 #DEFINES += SRCDIR=\\\"../CarService\\\"
 
 HEADERS += \
-    ../CarService/clients.h \
-    ../CarService/client.h \
-    ../CarService/car.h
+    ../../../src/clients.h \
+    ../../../src/client.h \
+    ../../../src/car.h

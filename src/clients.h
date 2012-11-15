@@ -71,6 +71,9 @@ private:
       </request>
       */
     bool deleteCars(QDomDocument doc);
+    /** \brief Функция возвращающая список всех клиентов и автомобилей
+     */
+    bool allClientsData(QDomDocument doc);
 
 public:
     /** \brief Конструктор класса

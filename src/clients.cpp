@@ -70,6 +70,11 @@ bool Clients::deleteCars(QDomDocument doc)
     return true;
 }
 
+bool Clients::allClientsData(QDomDocument doc)
+{
+    return true;
+}
+
 void Clients::addClients(QList<ClientDefinition> clients)
 {
     ClientDefinition clientDefinition;
