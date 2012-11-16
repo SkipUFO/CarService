@@ -103,8 +103,8 @@ void CarTest::testCaseCreateByOtherCarObject()
 void CarTest::testCaseCreateByOperatorAssignment()
 {
     Car car1(1, "М936НН/96");
-    Car car2 = car1;
-    //car2 = car1;
+    Car car2;
+    car2 = car1;
     QCOMPARE(car1.brand(), car2.brand());
     QCOMPARE(car1.stateRegistrationNumber(), car2.stateRegistrationNumber());
 }
