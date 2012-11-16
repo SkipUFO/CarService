@@ -17,8 +17,8 @@ CONFIG(debug, debug|release) {
 }
 
 LIBS += -lgcov
-QMAKE_CXXFLAGS += -g -fprofile-arcs -ftest-coverage -O0
-QMAKE_LDFLAGS += -g -fprofile-arcs -ftest-coverage  -O0
+QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
+QMAKE_LDFLAGS += -fprofile-arcs -ftest-coverage
 
 SOURCES += tst_car.cpp \
         ../../../src/car.cpp
