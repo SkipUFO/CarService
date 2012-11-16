@@ -12,6 +12,14 @@ CONFIG   -= app_bundle
 
 TEMPLATE = app
 
+CONFIG(debug, debug|release) {
+    DESTDIR = "debug"
+}
+
+LIBS += -lgcov
+QMAKE_CXXFLAGS += -g -fprofile-arcs -ftest-coverage -O0
+QMAKE_LDFLAGS += -g -fprofile-arcs -ftest-coverage  -O0
+
 
 SOURCES += \
            tst_clients.cpp \
