@@ -2,25 +2,33 @@
 
 Car::Car(int brand, QString stateRegistrationNumber, QObject *parent) : QObject(parent)
 {
+
     m_brand = brand;
     m_stateRegistrationNumber = stateRegistrationNumber;
+
 }
 Car::Car(CarDefinition carDefinition, QObject *parent) : QObject(parent)
 {
+
     m_brand = carDefinition.brand;
     m_stateRegistrationNumber = carDefinition.stateRegistrationNumber;
+
 }
 
 Car::Car(const Car &other) : QObject(other.parent())
 {
+
     m_brand = other.m_brand;
     m_stateRegistrationNumber = other.m_stateRegistrationNumber;
+
 }
 
 Car::Car(Car &other) : QObject(other.parent())
 {
+
     m_brand = other.m_brand;
     m_stateRegistrationNumber = other.m_stateRegistrationNumber;
+
 }
 
 Car::~Car()
@@ -72,7 +80,7 @@ CarDefinition Car::car()
 {
     CarDefinition carDefinition;
     carDefinition.brand = m_brand;
-    carDefinition.stateRegistrationNumber = stateRegistrationNumber();
+    carDefinition.stateRegistrationNumber = m_stateRegistrationNumber;
     return carDefinition;
 }
 
